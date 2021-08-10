@@ -18,6 +18,10 @@ public class CustomerController {
 	public String invite() {
 		return "greeting to you";
 	}
+	@GetMapping("/statement")
+	public String getstatement() {
+		return "this is the statement";
+	}
 	@GetMapping("/customers")
 	public List<Customer> getCustomer() {
 		return Arrays.asList(new Customer(100, "rajesh"),new Customer(101, "vijay"));
